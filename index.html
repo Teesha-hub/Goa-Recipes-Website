@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goa's Lost Recipes - Reliving Forgotten Flavors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="brand-icon"><img src="https://tse1.mm.bing.net/th/id/OIP.QXgKv-I4vP-6W0NRIb5hbgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Goa's Lost Recipes Logo"></div>
+                <span class="brand-text">Goa's Lost Recipes</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#recipes" class="nav-link">Recipes</a>
+                <a href="#featured" class="nav-link">Featured</a>
+                <a href="#tips" class="nav-link">Tips & Guide</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-icon">
+                <i class="fas fa-star"></i>
+            </div>
+            <h1 class="hero-title">
+                Reliving Goa's<br>
+                <span class="highlight">Forgotten Flavors</span>
+            </h1>
+            <p class="hero-subtitle">
+                Discover the lost culinary treasures of Goa, where Portuguese heritage meets Indian soul
+            </p>
+            <button class="cta-button" onclick="scrollToSection('recipes')">
+                <i class="fas fa-utensils"></i>
+                Explore Recipes
+            </button>
+        </div>
+        <div class="hero-decorations">
+            <i class="fas fa-pepper-hot decoration-1"></i>
+            <i class="fas fa-fish decoration-2"></i>
+            <i class="fas fa-seedling decoration-3"></i>
+        </div>
+    </section>
+
+    <!-- Chef's Tip of the Day -->
+    <section class="daily-tip">
+        <div class="container">
+            <div class="tip-card" id="daily-tip-card">
+                <div class="tip-header">
+                    <i class="fas fa-chef-hat"></i>
+                    <h3>Chef's Tip of the Day</h3>
+                </div>
+                <div class="tip-content" id="tip-content">
+                    <p>Always use fresh coconut milk for authentic Goan curries. Extract it yourself by grating fresh coconut and squeezing with warm water.</p>
+                </div>
+                <button class="tip-refresh">
+                    <i class="fas fa-sync-alt"></i>
+                    New Tip
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Culinary Heritage</h2>
+                <p>A journey through time to preserve the authentic flavors that made Goan cuisine legendary</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>The Story Behind the Flavors</h3>
+                    <p>Goan cuisine is a beautiful fusion born from centuries of cultural exchange. When the Portuguese arrived in 1510, they brought new ingredients, cooking techniques, and culinary traditions that blended harmoniously with local Konkani flavors.</p>
+                    <p>Over time, many traditional recipes have been lost or altered. Family secrets passed down through generations are disappearing as urbanization changes how we cook and eat. Our mission is to document and preserve these culinary treasures before they vanish forever.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Goa, India</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-heart"></i>
+                            <span>Preserving tradition since 2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.slurrp.com/prod/articles/anlag5kcds8.webp" alt="Traditional Goan kitchen">
+                    <div class="image-overlay">
+                        <div class="overlay-text">
+                            <div class="overlay-number">500+</div>
+                            <div class="overlay-label">Years of Tradition</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="heritage-stats">
+                <div class="stat-card">
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Lost Recipes</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Local Ingredients</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Family Stories</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">Cooking Techniques</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Archive -->
+    <section id="recipes" class="recipes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Recipe Archive</h2>
+                <p>Each recipe tells a story of tradition, family, and the rich cultural tapestry of Goa</p>
+            </div> 
+
+            <!-- Recipe Filters -->
+            <div class="recipe-filters">
+                <button class="filter-btn active" data-filter="all">All Recipes</button>
+                <button class="filter-btn" data-filter="desserts">Desserts</button>
+                <button class="filter-btn" data-filter="curries">Curries</button>
+                <button class="filter-btn" data-filter="snacks">Snacks</button>
+                <button class="filter-btn" data-filter="drinks">Drinks</button>
+            </div>
+
+            <div class="recipes-grid" id="recipes-grid">
+                <!-- Recipe cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Recipe -->
+    <section id="featured" class="featured">
+        <div class="container">
+            <div class="section-header">
+                <div class="featured-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Recipe of the Month</span>
+                </div>
+                <h2>Featured Recipe</h2>
+            </div>
+
+            <div class="featured-content">
+                <div class="featured-image">
+                    <img src="https://cdn.tasteatlas.com/images/dishes/3ec25abc12f7497d813a82f27496d069.jpg?m=facebook" alt="Traditional Bebinca">
+                </div>
+                <div class="featured-details">
+                    <h3>Traditional Bebinca</h3>
+                    <p>A rich, layered Goan dessert made with coconut milk, eggs, and palm sugar. This Portuguese-influenced sweet requires patience but rewards with incredible flavor.</p>
+                    
+                    <div class="recipe-story">
+                        <p><em>"Bebinca is the queen of Goan desserts, traditionally served during Christmas. Each layer represents patience and love."</em></p>
+                    </div>
+
+                    <div class="recipe-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-clock"></i>
+                            <span>3 hours</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-users"></i>
+                            <span>8 servings</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-signal"></i>
+                            <span>Hard</span>
+                        </div>
+                    </div>
+
+                    <div class="ingredients-preview">
+                        <h4>Key Ingredients:</h4>
+                        <ul>
+                            <li>2 cups coconut milk</li>
+                            <li>10 egg yolks</li>
+                            <li>1 cup palm sugar (jaggery)</li>
+                            <li>1/2 cup plain flour</li>
+                            <li>1/4 cup ghee</li>
+                            <li>1 tsp nutmeg powder</li>
+                        </ul>
+                    </div>
+
+                    <button class="recipe-button" onclick="showRecipeModal('bebinca')">
+                        <i class="fas fa-book-open"></i>
+                        View Complete Recipe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips & Ingredients -->
+    <section id="tips" class="tips">
+        <div class="container">
+            <div class="section-header">
+                <h2>Traditional Wisdom</h2>
+                <p>Master the authentic techniques and discover the native ingredients that make Goan cuisine special</p>
+            </div>
+
+            <div class="tips-content">
+                <div class="cooking-tips">
+                    <h3><i class="fas fa-book-open"></i> Traditional Techniques</h3>
+                    <div class="tips-list" id="cooking-tips">
+                        <!-- Tips will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="ingredients-guide">
+                    <h3><i class="fas fa-seedling"></i> Native Ingredients</h3>
+                    <div class="ingredients-list" id="ingredients-list">
+                        <!-- Ingredients will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Share Your Heritage</h2>
+                <p>Have a family recipe or cooking memory to share? Help us preserve Goa's culinary legacy for future generations</p>
+            </div>
+
+            <div class="contact-content">
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i>
+                                Full Name *
+                            </label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i>
+                                Email Address *
+                            </label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">
+                            <i class="fas fa-tag"></i>
+                            Subject
+                        </label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Share your family recipe, cooking memories, or any feedback..."></textarea>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="recipe-submission" name="recipe-submission">
+                        <label for="recipe-submission">I'm submitting a traditional family recipe</label>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3>Join Our Mission</h3>
+                        <p>Every recipe has a story. Every story preserves a piece of our heritage. Together, we can ensure that Goa's culinary treasures are never forgotten.</p>
+                        <div class="mission-statement">
+                            <i class="fas fa-heart"></i>
+                            <span>Preserving traditions, one recipe at a time</span>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-icon"><img src="https://tse1.mm.bing.net/th/id/OIP.QXgKv-I4vP-6W0NRIb5hbgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Goa's Lost Recipes Logo"></div>
+                    <span class="brand-text">Goa's Lost Recipes</span>
+                </div>
+                <p class="footer-description">
+                    Preserving Goa's culinary heritage for future generations
+                </p>
+                <div class="footer-info">
+                    <span>© 2024 Goa's Lost Recipes</span>
+                    <span>•</span>
+                    <span>Made with ❤️ for Goan culture</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Recipe Modal -->
+    <div class="modal" id="recipe-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Recipe Details</h3>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Recipe details will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
