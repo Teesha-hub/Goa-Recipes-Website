@@ -368,19 +368,7 @@ const cookingTips = [
     }
 ];
 
-// Daily Tips Data
-const dailyTips = [
-    "Always use fresh coconut milk for authentic Goan curries. Extract it yourself by grating fresh coconut and squeezing with warm water.",
-    "Toast whole spices before grinding them for maximum flavor. The aroma will tell you when they're ready.",
-    "Palm vinegar is irreplaceable in traditional Goan recipes. If unavailable, use white wine vinegar as a substitute.",
-    "Kokum should be soaked in warm water for 15 minutes before use. Never boil it directly in the curry.",
-    "Traditional clay pots add an earthy flavor to curries. Season them properly before first use.",
-    "Fresh curry leaves make a huge difference. Add them at the end of cooking to preserve their aroma.",
-    "Jaggery (palm sugar) gives a deeper, more complex sweetness than regular sugar in Goan desserts.",
-    "Always marinate fish with turmeric and salt for at least 15 minutes before cooking.",
-    "Grind spices in small batches for the freshest flavor. Store in airtight containers.",
-    "Coconut oil is traditional for Goan cooking, but ghee adds richness to special occasion dishes."
-];
+// ...Chef's Tip of the Day feature removed...
 
 // Helper function for debouncing
 function debounce(func, wait = 20, immediate = false) {
