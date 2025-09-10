@@ -2,10 +2,9 @@
 
 ![HTML5](https://img.shields.io/badge/HTML5-orange?logo=html5&logoColor=white)  
 ![CSS3](https://img.shields.io/badge/CSS3-blue?logo=css3&logoColor=white)  
-![JavaScript](https://img.shields.io/badge/JavaScript-yellow?logo=javascript&logoColor=black)  
-![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?logo=bootstrap&logoColor=white)  
+![JavaScript](https://img.shields.io/badge/JavaScript-yellow?logo=javascript&logoColor=black)   
 ![Status](https://img.shields.io/badge/Project-Frontend_Only-green)  
-![License](https://img.shields.io/badge/License-MIT-blue)  
+
 
 A visually engaging and responsive webpage that preserves and showcases **traditional Goan recipes** with Portuguese influences.  
 Built using **HTML5, CSS3, and JavaScript (frontend only, no backend)**.  
